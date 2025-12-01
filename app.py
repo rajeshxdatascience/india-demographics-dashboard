@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv(r'C:\Users\rajes\CampusXDSMP1.0\PlotlyProject\india.csv')
+df = pd.read_csv("india.csv")
 
 st.title("India District Demographics & Development Dashboard")
 
@@ -44,4 +44,5 @@ if plot:
                             secondary: ':.2f'
                         })
         
+
         st.plotly_chart(fig,use_container_width=True)
